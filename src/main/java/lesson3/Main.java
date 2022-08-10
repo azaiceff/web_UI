@@ -15,7 +15,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +22,7 @@ public class Main {
         driverList.add(getChromeWebDriver());
         driverList.add(getFireFoxWebDriver());
         driverList.forEach(driver -> {
-            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
             driver.get("https://www.livejournal.com/");
             allTests(driver);
         });
