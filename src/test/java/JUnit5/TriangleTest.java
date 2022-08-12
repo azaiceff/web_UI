@@ -21,7 +21,7 @@ public class TriangleTest {
 
     @ParameterizedTest
     @CsvFileSource(resources = "/JUnit5/positiveTest.csv", delimiter = ';')
-    void positiveTestTriangle(String a, String b, String c, Double expectationResult) throws MyExceptionNotTriangle, MyExceptionSegment {
+    void positiveTestTriangle(String a, String b, String c, Double expectationResult) throws MyException {
         assumeFalse((a == null) || (b == null) || (c == null) || expectationResult == null);
         double calculationError = 1.0E-4;
         double actualAreaTriangle = Double.parseDouble(Objects.requireNonNull(TriangleArea.areaTriangle(a, b, c)));
@@ -36,9 +36,10 @@ public class TriangleTest {
                 () -> assertTimeout(Duration.ofMillis(3), () -> TriangleArea.areaTriangle(a, b, c))
         );
     }
+
     @ParameterizedTest
     @CsvFileSource(resources = "/JUnit5/errorTest.csv", delimiter = ';')
-    void calculationErrorTestTriangle(String a, String b, String c, double expectationResult) throws MyExceptionNotTriangle, MyExceptionSegment {
+    void calculationErrorTestTriangle(String a, String b, String c, double expectationResult) throws MyException {
         double calculationError = 1.0E-4;
         double actualAreaTriangle = Double.parseDouble(Objects.requireNonNull(TriangleArea.areaTriangle(a, b, c)));
         double actualCalculationError = Math.abs(expectationResult - actualAreaTriangle);
@@ -46,36 +47,40 @@ public class TriangleTest {
                 + " Большая погрешность вычисления или неверный расчет";
         assertTrue(calculationError <= actualCalculationError, result);
     }
+
     @ParameterizedTest
     @CsvFileSource(resources = "/JUnit5/textTest.csv", delimiter = ';')
-    void textTestTriangle(String a, String b, String c){
+    void textTestTriangle(String a, String b, String c) {
         assertThrows(NumberFormatException.class, () -> TriangleArea.areaTriangle(a, b, c), "нет исключения NumberFormatException");
     }
+
     @ParameterizedTest
     @CsvFileSource(resources = "/JUnit5/IllegalArgumentTest.csv", delimiter = ';')
-    void IllegalArgumentTest(String a, String b, String c){
+    void IllegalArgumentTest(String a, String b, String c) {
         assertThrows(IllegalArgumentException.class, () -> TriangleArea.areaTriangle(a, b, c), "нет исключения IllegalArgumentException");
     }
+
     @ParameterizedTest
     @CsvFileSource(resources = "/JUnit5/zeroTest.csv", delimiter = ';')
-    void nullTest(String a, String b, String c) throws MyException{
+    void nullTest(String a, String b, String c) throws MyException {
         assertNull(TriangleArea.areaTriangle(a, b, c));
     }
+
     @ParameterizedTest
     @CsvFileSource(resources = "/JUnit5/segmentTest.csv", delimiter = ' ')
-    void segmentTest(String a, String b, String c) throws MyExceptionNotTriangle{
+    void segmentTest(String a, String b, String c) throws MyException {
         assumeFalse(a.equals("0") || b.equals("0") | c.equals("0"));
         try {
             System.out.println(TriangleArea.areaTriangle(a, b, c));
         } catch (MyExceptionSegment e) {
             logger.error(e.getMessage());
         }
-
         assertThrows(MyException.class, () -> TriangleArea.areaTriangle(a, b, c), "нет исключения MyExceptionSegment");
     }
+
     @ParameterizedTest
     @CsvFileSource(resources = "/JUnit5/notTriangleTest.csv", delimiter = ';')
-    void notTriangleTest(String a, String b, String c) throws MyExceptionSegment {
+    void notTriangleTest(String a, String b, String c) throws MyException {
         try {
             System.out.println(TriangleArea.areaTriangle(a, b, c));
         } catch (MyExceptionNotTriangle e) {
