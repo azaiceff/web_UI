@@ -7,7 +7,7 @@ import JUnit5.MyException.MyExceptionSegment;
 public class TriangleArea {
     public static void main(String[] args) throws MyException {
         String a = "10";
-        String b = "5";
+        String b = "2";
         String c = "7";
         String s = areaTriangle(a, b, c);
         System.out.println(s);
@@ -25,10 +25,12 @@ public class TriangleArea {
     private static boolean checkError(double a, double b, double c) throws MyException {
         if (a < 0 || b < 0 || c < 0) throw new IllegalArgumentException();
         if (a == 0 || b == 0 || c == 0) return true;
-        if (a + b < c || a + c < b || b + c < a)
+        if (a + b < c || a + c < b || b + c < a) {
             throw new MyExceptionNotTriangle("Сумма двух сторон треугольника меньше третьей - таких треугольников нет в природе!");
-        if (!checkSum(a, b, c).equals("Все норм)"))
+        }
+        if (!checkSum(a, b, c).equals("Все норм)")) {
             throw new MyExceptionSegment("Получился отрезок длинной равный " + Math.round((Double) checkSum(a, b, c)));
+        }
         return false;
     }
 
