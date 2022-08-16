@@ -20,7 +20,7 @@ public class TriangleTest {
     private static final Logger logger = LoggerFactory.getLogger(TriangleTest.class);
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/JUnit5/positiveTest.csv", delimiter = ';')
+    @CsvFileSource(resources = "/JUnit5/testsFiles/positiveTest.csv", delimiter = ';')
     void positiveTestTriangle(String a, String b, String c, Double expectationResult) throws MyException {
         assumeFalse((a == null) || (b == null) || (c == null) || expectationResult == null);
         double calculationError = 1.0E-4;
@@ -38,7 +38,7 @@ public class TriangleTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/JUnit5/errorTest.csv", delimiter = ';')
+    @CsvFileSource(resources = "/JUnit5/testsFiles/errorTest.csv", delimiter = ';')
     void calculationErrorTestTriangle(String a, String b, String c, double expectationResult) throws MyException {
         double calculationError = 1.0E-4;
         double actualAreaTriangle = Double.parseDouble(Objects.requireNonNull(TriangleArea.areaTriangle(a, b, c)));
@@ -49,25 +49,25 @@ public class TriangleTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/JUnit5/textTest.csv", delimiter = ';')
+    @CsvFileSource(resources = "/JUnit5/testsFiles/textTest.csv", delimiter = ';')
     void textTestTriangle(String a, String b, String c) {
         assertThrows(NumberFormatException.class, () -> TriangleArea.areaTriangle(a, b, c), "нет исключения NumberFormatException");
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/JUnit5/IllegalArgumentTest.csv", delimiter = ';')
+    @CsvFileSource(resources = "/JUnit5/testsFiles/IllegalArgumentTest.csv", delimiter = ';')
     void IllegalArgumentTest(String a, String b, String c) {
         assertThrows(IllegalArgumentException.class, () -> TriangleArea.areaTriangle(a, b, c), "нет исключения IllegalArgumentException");
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/JUnit5/zeroTest.csv", delimiter = ';')
+    @CsvFileSource(resources = "/JUnit5/testsFiles/zeroTest.csv", delimiter = ';')
     void nullTest(String a, String b, String c) throws MyException {
         assertNull(TriangleArea.areaTriangle(a, b, c));
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/JUnit5/segmentTest.csv", delimiter = ' ')
+    @CsvFileSource(resources = "/JUnit5/testsFiles/segmentTest.csv", delimiter = ' ')
     void segmentTest(String a, String b, String c) throws MyException {
         assumeFalse(a.equals("0") || b.equals("0") | c.equals("0"));
         try {
@@ -79,7 +79,7 @@ public class TriangleTest {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/JUnit5/notTriangleTest.csv", delimiter = ';')
+    @CsvFileSource(resources = "/JUnit5/testsFiles/notTriangleTest.csv", delimiter = ';')
     void notTriangleTest(String a, String b, String c) throws MyException {
         try {
             System.out.println(TriangleArea.areaTriangle(a, b, c));

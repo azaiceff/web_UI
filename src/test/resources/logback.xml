@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>src/test/resources/app.log</file>
+        <file>src/test/resources/JUnit5/app.log</file>
         <encoder>
             <pattern>%d{HH:mm:ss,SSS} %-5p [%c] - %m%n</pattern>
         </encoder>
