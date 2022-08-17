@@ -12,7 +12,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class SiteTest extends AbstractTest{
+public class MainSiteTest extends AbstractTest{
 
 
     @Test()

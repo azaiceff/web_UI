@@ -21,7 +21,3 @@
 21:51:16 ERROR [JUnit5.TriangleTest] - Сумма двух сторон треугольника меньше третьей - таких треугольников нет в природе!
 21:51:16 ERROR [JUnit5.TriangleTest] - Сумма двух сторон треугольника меньше третьей - таких треугольников нет в природе!
 21:51:16 ERROR [JUnit5.TriangleTest] - Сумма двух сторон треугольника меньше третьей - таких треугольников нет в природе!
-21:57:43 INFO  [io.github.bonigarcia.wdm.WebDriverManager] - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
-21:57:43 INFO  [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\Александр\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
-21:57:45 INFO  [io.github.bonigarcia.wdm.WebDriverManager] - Using geckodriver 0.31.0 (resolved driver for Firefox 103)
-21:57:45 INFO  [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.gecko.driver as C:\Users\Александр\.cache\selenium\geckodriver\win64\0.31.0\geckodriver.exe
