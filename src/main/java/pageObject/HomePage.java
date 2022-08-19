@@ -14,9 +14,9 @@ public class HomePage extends AbstractPage {
     private WebElement fieldPassword;
     @FindBy(name = "action:login")
     private WebElement buttonLogin;
-    @FindBy(xpath = "(//a[contains(text(), 'Наука и техника')])[1]")
+    @FindBy(xpath = "(//a[contains(text(),'Вокруг света')])[1]")
     private WebElement menuSection;
-    @FindBy(xpath = "//a[contains(text(),'IT')]")
+    @FindBy(xpath = "//a[contains(text(),'Архитектура')]")
     private WebElement chapterIT;
     @FindBy(css = ".search__control")
     private WebElement searchControl;
