@@ -21,3 +21,33 @@
 21:51:16 ERROR [JUnit5.TriangleTest] - Сумма двух сторон треугольника меньше третьей - таких треугольников нет в природе!
 21:51:16 ERROR [JUnit5.TriangleTest] - Сумма двух сторон треугольника меньше третьей - таких треугольников нет в природе!
 21:51:16 ERROR [JUnit5.TriangleTest] - Сумма двух сторон треугольника меньше третьей - таких треугольников нет в природе!
+15:32:01 INFO  [io.github.bonigarcia.wdm.WebDriverManager] - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+15:32:01 INFO  [io.github.bonigarcia.wdm.WebDriverManager] - Exporting webdriver.chrome.driver as C:\Users\Александр\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+15:32:27 INFO  [JUnit5.TriangleTest] - https://www.livejournal.com/ - [DOM] Found 2 elements with non-unique id #SearchText: (More info: https://goo.gl/9p2vKq) %o %o
+15:32:27 INFO  [JUnit5.TriangleTest] - https://l-stat.livejournal.net/js/??mainPage2018/index.js,scheme/schemius/index.js,widgets/angular/login.js,scheme/medius.js,widgets/discoverytimes.js?v=1661244855 705:332 Uncaught TypeError: Invalid attempt to spread non-iterable instance.
+I…y objects must have a [Symbol.iterator]() method.
+15:32:27 INFO  [JUnit5.TriangleTest] - https://www.livejournal.com/login.bml?returnto=https%3A%2F%2Fwww.livejournal.com%2Feditpics.bml - [DOM] Found 2 elements with non-unique id #SearchText: (More info: https://goo.gl/9p2vKq) %o %o
+15:32:35 INFO  [JUnit5.TriangleTest] - https://www.livejournal.com/ - [DOM] Found 2 elements with non-unique id #SearchText: (More info: https://goo.gl/9p2vKq) %o %o
+15:32:35 INFO  [JUnit5.TriangleTest] - https://l-stat.livejournal.net/js/??mainPage2018/index.js,scheme/schemius/index.js,widgets/angular/login.js,scheme/medius.js,widgets/discoverytimes.js?v=1661244855 705:332 Uncaught TypeError: Invalid attempt to spread non-iterable instance.
+I…y objects must have a [Symbol.iterator]() method.
+15:32:35 INFO  [JUnit5.TriangleTest] - https://www.livejournal.com/category/arhitektura/ - [DOM] Found 2 elements with non-unique id #SearchText: (More info: https://goo.gl/9p2vKq) %o %o
+15:32:35 INFO  [JUnit5.TriangleTest] - https://l-stat.livejournal.net/js/??categoryPage2018/index.js,scheme/schemius/index.js,widgets/angular/login.js,scheme/medius.js?v=1661244855 472:1079 Uncaught TypeError: Invalid attempt to spread non-iterable instance.
+I…y objects must have a [Symbol.iterator]() method.
+15:32:35 INFO  [JUnit5.TriangleTest] - https://l-stat.livejournal.net/js/??.ljlib.js?v=1661244855 312:5293 "Could not query-get enough rating items"
+15:32:35 INFO  [JUnit5.TriangleTest] - https://www.livejournal.com/rsearch?category=%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0&searchArea=byCategory&q=%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5 - [DOM] Found 2 elements with non-unique id #SearchText: (More info: https://goo.gl/9p2vKq) %o %o
+15:32:35 INFO  [JUnit5.TriangleTest] - https://www.livejournal.com/rsearch?category=%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0&searchArea=byCategory&q=%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5 - [DOM] Found 3 elements with non-unique id #rsearch-str: (More info: https://goo.gl/9p2vKq) %o %o %o
+15:32:51 INFO  [JUnit5.TriangleTest] - https://www.livejournal.com/ - [DOM] Found 2 elements with non-unique id #SearchText: (More info: https://goo.gl/9p2vKq) %o %o
+15:32:51 INFO  [JUnit5.TriangleTest] - https://l-stat.livejournal.net/js/??mainPage2018/index.js,scheme/schemius/index.js,widgets/angular/login.js,scheme/medius.js,widgets/discoverytimes.js?v=1661244855 705:332 Uncaught TypeError: Invalid attempt to spread non-iterable instance.
+I…y objects must have a [Symbol.iterator]() method.
+15:32:51 INFO  [JUnit5.TriangleTest] - https://sedrac.livejournal.com/photo/album/113448 - Form submission canceled because the form is not connected
+15:32:51 INFO  [JUnit5.TriangleTest] - https://sedrac.livejournal.com/photo - [DOM] Found 2 elements with non-unique id #SearchText: (More info: https://goo.gl/9p2vKq) %o %o
+15:33:05 INFO  [JUnit5.TriangleTest] - https://www.livejournal.com/ - [DOM] Found 2 elements with non-unique id #SearchText: (More info: https://goo.gl/9p2vKq) %o %o
+15:33:05 INFO  [JUnit5.TriangleTest] - https://l-stat.livejournal.net/js/??mainPage2018/index.js,scheme/schemius/index.js,widgets/angular/login.js,scheme/medius.js,widgets/discoverytimes.js?v=1661244855 705:332 Uncaught TypeError: Invalid attempt to spread non-iterable instance.
+I…y objects must have a [Symbol.iterator]() method.
+15:33:05 INFO  [JUnit5.TriangleTest] - https://sedrac.livejournal.com/photo/album/113704 - Form submission canceled because the form is not connected
+15:33:05 INFO  [JUnit5.TriangleTest] - https://sedrac.livejournal.com/photo - [DOM] Found 2 elements with non-unique id #SearchText: (More info: https://goo.gl/9p2vKq) %o %o
+15:33:19 INFO  [JUnit5.TriangleTest] - https://www.livejournal.com/ - [DOM] Found 2 elements with non-unique id #SearchText: (More info: https://goo.gl/9p2vKq) %o %o
+15:33:19 INFO  [JUnit5.TriangleTest] - https://l-stat.livejournal.net/js/??mainPage2018/index.js,scheme/schemius/index.js,widgets/angular/login.js,scheme/medius.js,widgets/discoverytimes.js?v=1661244855 705:332 Uncaught TypeError: Invalid attempt to spread non-iterable instance.
+I…y objects must have a [Symbol.iterator]() method.
+15:33:19 INFO  [JUnit5.TriangleTest] - https://sedrac.livejournal.com/photo/album/114053 - Form submission canceled because the form is not connected
+15:33:19 INFO  [JUnit5.TriangleTest] - https://sedrac.livejournal.com/photo - [DOM] Found 2 elements with non-unique id #SearchText: (More info: https://goo.gl/9p2vKq) %o %o
