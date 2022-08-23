@@ -3,6 +3,7 @@ package JUnit5;
 import JUnit5.MyException.MyException;
 import JUnit5.MyException.MyExceptionNotTriangle;
 import JUnit5.MyException.MyExceptionSegment;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
@@ -15,7 +16,7 @@ import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeFalse;
-
+@Story("Story")
 public class TriangleTest {
     private static final Logger logger = LoggerFactory.getLogger(TriangleTest.class);
 
