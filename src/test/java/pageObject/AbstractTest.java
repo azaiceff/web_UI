@@ -1,9 +1,11 @@
 package pageObject;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -11,7 +13,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import java.time.Duration;
 
 public class AbstractTest {
-    private static WebDriver driverGoogleChrome;
+    //private static WebDriver driverGoogleChrome;
     private static EventFiringWebDriver eventDriver;
 
     @BeforeAll
@@ -24,7 +26,7 @@ public class AbstractTest {
         eventDriver = new EventFiringWebDriver(new FirefoxDriver(optionsFox));
         eventDriver.register(new MyWebDriverEventListener());
 
-        eventDriver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
+        eventDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
     }
 
     @BeforeEach

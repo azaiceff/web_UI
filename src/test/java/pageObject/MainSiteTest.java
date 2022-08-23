@@ -38,7 +38,6 @@ public class MainSiteTest extends AbstractTest {
         saveScreen("AfterDeleting");
         logOut(getDriver());
     }
-
     private void saveScreen(String name) throws IOException {
         File file = MyUtils.makeScreenshot(getDriver(),name + " " + System.currentTimeMillis() + ".png");
         saveScreenshot(Files.readAllBytes(file.toPath()));

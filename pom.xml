@@ -20,7 +20,7 @@
         <logback-core.version>1.2.11</logback-core.version>
         <allure.version>2.16.0</allure.version>
         <allure-maven.version>2.11.2</allure-maven.version>
-        <maven.surefire.plugin>3.0.0-M7</maven.surefire.plugin>
+        <maven.surefire.plugin>2.22.0</maven.surefire.plugin>
         <aspectjweaver.version>1.9.9.1</aspectjweaver.version>
 
     </properties>
